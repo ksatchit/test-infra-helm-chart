@@ -1,7 +1,7 @@
 global:
   infraId: "1234"
   accessKey: "xyz"
-  accountId: "abcd"
+  #accountId: "abcd"
   workflowInstanceId: "6789"
 
 subscriber:
