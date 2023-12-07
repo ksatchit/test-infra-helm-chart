@@ -1,10 +1,9 @@
 global:
   infraId: "1234"
   accessKey: "xyz"
-  workflowInstanceId: "6789"
   #accountId: "abcd"
-  #accountId: "cTU1lRSWS2SSRV9phKvuOA"
-
+  workflowInstanceId: "6789"
+  
 subscriber:
   image:
     registry: docker.io
