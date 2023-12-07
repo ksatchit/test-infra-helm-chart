@@ -3,7 +3,7 @@ global:
   accessKey: "xyz"
   #accountId: "abcd"
   workflowInstanceId: "6789"
-
+  
 subscriber:
   image:
     registry: docker.io
@@ -20,7 +20,7 @@ subscriber:
       # Overrides the image tag whose default is the chart appVersion.
       tag: "1.23.0"
 
-
+  customTlsCert: ""
   version: 1.23.0
 
   skipSslVerify: "false"
@@ -47,6 +47,9 @@ subscriber:
       memory: "500Mi"
       cpu: "225m"
       ephemeral-storage: "1Gi"
+  nodeSelector: {}
+  affinity: {}
+  tolerations: []
 
 workflow-controller:
   image:
@@ -81,6 +84,9 @@ workflow-controller:
       memory: "500Mi"
       cpu: "225m"
       ephemeral-storage: "1Gi"
+  nodeSelector: {}
+  affinity: {}
+  tolerations: []
 chaos-operator:
   image:
     registry: docker.io
@@ -114,6 +120,9 @@ chaos-operator:
       memory: "500Mi"
       cpu: "225m"
       ephemeral-storage: "1Gi"
+  nodeSelector: {}
+  affinity: {}
+  tolerations: []
 chaos-exporter:
   image:
     registry: docker.io
@@ -139,5 +148,10 @@ chaos-exporter:
       memory: "500Mi"
       cpu: "225m"
       ephemeral-storage: "1Gi"
+  nodeSelector: {}
+  affinity: {}
+  tolerations: []
+
+
 
 
