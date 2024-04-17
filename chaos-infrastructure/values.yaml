@@ -7,28 +7,27 @@ global:
 subscriber:
   image:
     registry: docker.io
-    repository: chaosnative/harness-chaos-subscriber
+    repository: harness/chaos-subscriber
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "1.23.0"
+    tag: "1.34.0"
 
   upgrader:
     image:
       registry: docker.io
-      repository: chaosnative/harness-k8s-chaos-infrastructure-upgrader
+      repository: harness/k8s-chaos-infrastructure-upgrader
       pullPolicy: Always
       # Overrides the image tag whose default is the chart appVersion.
-      tag: "1.23.0"
+      tag: "1.34.0"
 
   customTlsCert: ""
-  version: 1.23.0
+  version: 1.34.0
 
   skipSslVerify: "false"
 
   connectionType: HTTPS
 
   isSecretEnabled: "true"
-
 
   serviceAccount: 
     name: hce
@@ -54,18 +53,18 @@ subscriber:
 workflow-controller:
   image:
     registry: docker.io
-    repository: chaosnative/workflow-controller
+    repository: harness/chaos-workflow-controller
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "v3.4.10"
+    tag: "v3.4.16"
 
   argoExec:
     image:
       registry: docker.io
-      repository: chaosnative/argoexec
+      repository: harness/chaos-argoexec
       pullPolicy: Always
       # Overrides the image tag whose default is the chart appVersion.
-      tag: "v3.4.10"
+      tag: "v3.4.16"
 
   serviceAccount: 
     name: hce
@@ -90,18 +89,18 @@ workflow-controller:
 chaos-operator:
   image:
     registry: docker.io
-    repository: chaosnative/chaos-operator
+    repository: harness/chaos-operator
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "1.23.1"
+    tag: "1.34.0"
 
   chaosRunner:
     image:
       registry: docker.io
-      repository: chaosnative/chaos-runner
+      repository: harness/chaos-runner
       pullPolicy: Always
       # Overrides the image tag whose default is the chart appVersion.
-      tag: "1.23.0"
+      tag: "1.34.0"
 
   serviceAccount: 
     name: hce
@@ -126,10 +125,10 @@ chaos-operator:
 chaos-exporter:
   image:
     registry: docker.io
-    repository: chaosnative/chaos-exporter
+    repository: harness/chaos-exporter
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "1.23.0"
+    tag: "1.34.0"
 
   serviceAccount: 
     name: hce
