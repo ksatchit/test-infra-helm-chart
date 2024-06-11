@@ -10,7 +10,7 @@ subscriber:
     repository: harness/chaos-subscriber
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "1.34.0"
+    tag: "1.38.1"
 
   upgrader:
     image:
@@ -18,10 +18,10 @@ subscriber:
       repository: harness/k8s-chaos-infrastructure-upgrader
       pullPolicy: Always
       # Overrides the image tag whose default is the chart appVersion.
-      tag: "1.34.0"
+      tag: "1.38.0"
 
   customTlsCert: ""
-  version: 1.34.0
+  version: 1.38.0
 
   skipSslVerify: "false"
 
@@ -92,7 +92,7 @@ chaos-operator:
     repository: harness/chaos-operator
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "1.34.0"
+    tag: "1.38.0"
 
   chaosRunner:
     image:
@@ -100,7 +100,7 @@ chaos-operator:
       repository: harness/chaos-runner
       pullPolicy: Always
       # Overrides the image tag whose default is the chart appVersion.
-      tag: "1.34.0"
+      tag: "1.38.1"
 
   serviceAccount: 
     name: hce
@@ -128,7 +128,7 @@ chaos-exporter:
     repository: harness/chaos-exporter
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "1.34.0"
+    tag: "1.38.0"
 
   serviceAccount: 
     name: hce
